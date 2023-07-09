@@ -1,0 +1,46 @@
+.container{
+    margin: 0;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.container-child{
+    
+    width: 100%;
+    height: 100%;
+
+}
+
+body{
+    background-color: rgb(50, 45, 51);
+}
+
+button{
+    border: 0;
+    padding: 10px;
+    background-color: rgb(188, 188, 212);
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+}
+
+@keyframes shrink{
+    from{
+        transform: scale(0%);
+    }to{
+        transform: scale(100%);
+    }
+}
+
+.shrink{
+    animation-name: shrink;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
